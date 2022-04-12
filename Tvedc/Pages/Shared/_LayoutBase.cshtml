@@ -7,8 +7,6 @@
     <title>شرکت توزیع نیروی برق استان تهران - @ViewData["Title"]</title>
     @*<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.rtl.min.css" />*@
     <link href="/libs/bootstrap/css/bootstrap.rtl.min.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="/libs/OwelSlider/assets/owl.carousel.min.css">
-    <link rel="stylesheet" type="text/css" href="/libs/OwelSlider/assets/owl.theme.default.min.css" />
     <link href="/css/custom1.css" rel="stylesheet" type="text/css" />
     <!-- FavIcons Add -->
     <link rel="apple-touch-icon" sizes="57x57" href="/img/FavIcon/apple-icon-57x57.png">
@@ -28,6 +26,8 @@
     <meta name="msapplication-TileColor" content="#f1c40f">
     <meta name="msapplication-TileImage" content="/img/FavIcon/ms-icon-144x144.png">
     <meta name="theme-color" content="#f1c40f">
+    @await RenderSectionAsync("Styles", required: false)
+
 </head>
 <body>
     
@@ -332,9 +332,6 @@
     <!-- Scripts -->
     <script src="/js/jquery-3.6.0.min.js"></script>
     <script src="/libs/bootstrap/js/bootstrap.min.js"></script>
-    <script src="/libs/OwelSlider/js/owl.carousel.min.js"></script>
-    <script src="/libs/OwelSlider/vendors/hl.js"></script>
-    <script src="/libs/OwelSlider/js/aapp.js"></script>
     <script src="/js/customjs.js"></script>
     @*<script src="/js/mainjs.js"></script>*@
 
