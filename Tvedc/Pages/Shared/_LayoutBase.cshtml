@@ -1,4 +1,9 @@
-﻿<!DOCTYPE html>
+﻿@using Tvedc.Interfaces
+@inject IMenuService menuService;
+@{
+    var rootMenus = await menuService.RootMainMenusAsync(0);
+}
+<!DOCTYPE html>
 <html dir="rtl" lang="fa">
 
 <head>
@@ -172,58 +177,37 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent2">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://tvedc.ir/html/CodeOfEthicsOrganization.html">منشور
-                                اخلاقی</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                قوانین و مقررات
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">معافیت ها </a></li>
-                                <li><a class="dropdown-item" href="#">دفتر حقوقی</a></li>
-                                <li><a class="dropdown-item" href="#">اطلاع رسانی مشترکین </a></li>
-                                <li><a class="dropdown-item" href="#">تعرفه ها و شرایط عمومی آنها </a></li>
-                                <li><a class="dropdown-item" href="#">برق مشتركين بالاي 5 مگاوات (غیرفلزي و
-                                        پالايشگاهي)</a>
+                        @for (var i = 0; i < rootMenus.Count; i++)
+                    {
+                        var rm = @rootMenus[i];
+                        var subMenus = await menuService.MainMenusByParentIdAsync(rm.Id);
+                        if (@subMenus.Count == 0)
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link" href="@Url.Content(rm.Url)">@rm.Title</a>
                                 </li>
-                                <li><a class="dropdown-item" href="#">شترکین بالای دو مگاوات و همچنین کمتر از دو مگاوات
-                                        دارای تجاوز از قدرت فلزی و پالایشگاهی </a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                درباره ما
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">معافیت ها </a></li>
-                                <li><a class="dropdown-item" href="#">دفتر حقوقی</a></li>
-                                <li><a class="dropdown-item" href="#">اطلاع رسانی مشترکین </a></li>
-                                <li><a class="dropdown-item" href="#">تعرفه ها و شرایط عمومی آنها </a></li>
-                                <li><a class="dropdown-item" href="#">برق مشتركين بالاي 5 مگاوات (غیرفلزي و
-                                        پالايشگاهي)</a>
-                                </li>
-                                <li><a class="dropdown-item" href="#">شترکین بالای دو مگاوات و همچنین کمتر از دو مگاوات
-                                        دارای تجاوز از قدرت فلزی و پالایشگاهی </a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                تماس با ما
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">معافیت ها </a></li>
-                                <li><a class="dropdown-item" href="#">دفتر حقوقی</a></li>
-                                <li><a class="dropdown-item" href="#">اطلاع رسانی مشترکین </a></li>
-                                <li><a class="dropdown-item" href="#">تعرفه ها و شرایط عمومی آنها </a></li>
-                                <li><a class="dropdown-item" href="#">برق مشتركين بالاي 5 مگاوات (غیرفلزي و
-                                        پالايشگاهي)</a>
-                                </li>
-                                <li><a class="dropdown-item" href="#">شترکین بالای دو مگاوات و همچنین کمتر از دو مگاوات
-                                        دارای تجاوز از قدرت فلزی و پالایشگاهی </a></li>
-                            </ul>
-                        </li>
+                            }
+                            else
+                            {
+                                var id = $"nd{@rm.Id}"; 
+                                <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="@id" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    @rm.Title
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="@id">
+                                    @for (var j = 0; j < subMenus.Count; j++)
+                                   {
+                                        var sm = @subMenus[j];
+                                       <li>
+                                        <a class="dropdown-item" href="@Url.Content(sm.Url)">
+                                            @sm.Title
+                                        </a>
+                                    </li>
+                                   }
+                                </ul>
+                            </li>
+                        }
+                    }
                     </ul>
                 </div>
             </div>
