@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html dir="rtl" lang="fa">
 
@@ -32,166 +33,7 @@
 <body>
 
 
-    <!-- NavBar -->
-    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top navbarDetails">
-        <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://tvedc.ir">صفحه اصلی</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="http://forum.tvedc.ir/">تالار گفتگو</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://shafaf.tvedc.ir/">سامانه شفافیت</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://tvedc.ir/poll">نظرسنجی</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://tvedc.ir/faq.aspx">سوالات متداول</a>
-                    </li>
-                </ul>
-            </div>
-            <form class="d-flex  ">
-                <div class="search-wrapper">
-                    <div class="input-holder">
-                        <input type="text" class="search-input" placeholder="جستجو کنید..." />
-                        <button class="search-icon ChangeLNG" onclick="searchToggle(this, event);"><span></span></button>
-                    </div>
-                    <span class="close" onclick="searchToggle(this, event);"></span>
-                </div>
-                <a href="/IndexEn.html" target="_self">
-                    <button class="btn btn-success ChangeLNG " role="button">سروش</button>
-                </a>
-                <button type="button" class="btn btn-success ChangeLNG" data-bs-toggle="modal" data-bs-target="#LoginForm">ورود</button>
-                <a href="/IndexEn.html" target="_self">
-                    <button class="btn btn-success ChangeLNG" role="button">EN</button>
-                </a>
-                <!-- LoginForm -->
-                <!-- Modal -->
-                <div class="modal fade" id="LoginForm">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-body">
-                                <div class="LoginModal">
-                                    <input class="Logininput" type="checkbox" id="chk" aria-hidden="true">
-                                    <input class="Logininput" type="checkbox" id="chk_register" aria-hidden="true">
-                                    <div class="signin">
-                                        <form autocomplete="on">
-                                            <label class="Loginlabel" for="chk" aria-hidden="true">وارد شوید</label>
-                                            <input class="Logininput" type="text" name="txt" placeholder="نام کاربری" required="">
-                                            <input class="Logininput" type="password" name="pswd" placeholder="کلمه عبور" required="">
-                                            <button class="Loginbutton">ورود</button>
-                                        </form>
-                                    </div>
-                                    <div class="ForgetPass">
-                                        <form>
-                                            <label class="Loginlabel" for="chk" aria-hidden="true">فراموشی رمز
-                                                عبور</label>
-                                            <input class="Logininput" type="tel" id="phone" name="phone" placeholder="تلفن همراه" pattern="[0]{1}[9]{1}[0-9]{9}" required>
-                                            <button class="Loginbutton">ارسال رمز</button>
-                                        </form>
-                                    </div>
-                                    <div class="Signup">
-                                        <form>
-                                            <label class="Loginlabel" for="chk_register" aria-hidden="true">ثبت
-                                                نام</label>
-                                            <input class="Logininput" type="number" name="Melli" placeholder="شناسه ملی" required="a">
-                                            <input class="Logininput" type="number" name="Melli" placeholder="کد اقتصادی" required="a">
-                                            <button class="Loginbutton">ثبت نام اولیه</button>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </form>
-        </div>
-    </nav>
-    <!-- Header -->
-    <div class="container-fluid FitNav">
-        <header>
-            <div class="row">
-                <div class="col-12">
-                    <img class="col-7 col-sm col-md-5 col-lg-6 col-xl-4 img-fluid rounded mx-auto d-block  HeaderIMGFIT " src="/img/H1.svg">
-                    <img class="col-2 col-sm-2 col-md-2 col-lg-1 col-xl-1 flag" src="/img/flag.svg" alt="">
-                    <img class="col-2 col-sm-2 col-md-2 col-lg-1 col-xl-1 YearT" src="/img/Year.svg" alt="">
-                </div>
-            </div>
-        </header>
-    </div>
-    <!-- NavMid -->
-    <div class="container-fluid">
-        <nav class="navbar navbar-expand-sm navbar-light bg-light navbarDetails ">
-            <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent2" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent2">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://tvedc.ir/html/CodeOfEthicsOrganization.html">منشور
-                                اخلاقی</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                قوانین و مقررات
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">معافیت ها </a></li>
-                                <li><a class="dropdown-item" href="#">دفتر حقوقی</a></li>
-                                <li><a class="dropdown-item" href="#">اطلاع رسانی مشترکین </a></li>
-                                <li><a class="dropdown-item" href="#">تعرفه ها و شرایط عمومی آنها </a></li>
-                                <li><a class="dropdown-item" href="#">برق مشتركين بالاي 5 مگاوات (غیرفلزي و
-                                        پالايشگاهي)</a>
-                                </li>
-                                <li><a class="dropdown-item" href="#">شترکین بالای دو مگاوات و همچنین کمتر از دو مگاوات
-                                        دارای تجاوز از قدرت فلزی و پالایشگاهی </a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                درباره ما
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">معافیت ها </a></li>
-                                <li><a class="dropdown-item" href="#">دفتر حقوقی</a></li>
-                                <li><a class="dropdown-item" href="#">اطلاع رسانی مشترکین </a></li>
-                                <li><a class="dropdown-item" href="#">تعرفه ها و شرایط عمومی آنها </a></li>
-                                <li><a class="dropdown-item" href="#">برق مشتركين بالاي 5 مگاوات (غیرفلزي و
-                                        پالايشگاهي)</a>
-                                </li>
-                                <li><a class="dropdown-item" href="#">شترکین بالای دو مگاوات و همچنین کمتر از دو مگاوات
-                                        دارای تجاوز از قدرت فلزی و پالایشگاهی </a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                تماس با ما
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">معافیت ها </a></li>
-                                <li><a class="dropdown-item" href="#">دفتر حقوقی</a></li>
-                                <li><a class="dropdown-item" href="#">اطلاع رسانی مشترکین </a></li>
-                                <li><a class="dropdown-item" href="#">تعرفه ها و شرایط عمومی آنها </a></li>
-                                <li><a class="dropdown-item" href="#">برق مشتركين بالاي 5 مگاوات (غیرفلزي و
-                                        پالايشگاهي)</a>
-                                </li>
-                                <li><a class="dropdown-item" href="#">شترکین بالای دو مگاوات و همچنین کمتر از دو مگاوات
-                                        دارای تجاوز از قدرت فلزی و پالایشگاهی </a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </div>
+
     <!-- Slider And Icons -->
     <div class="container-fluid">
         <section class="SliderAndIcones ">
@@ -349,93 +191,108 @@
                                 <div class="Tablefix">
                                     <table class="table TableGUI">
                                         <thead>
-                                            <th scope="col">موضوع</th>
-                                            <th scope="col">تاریخ</th>
+                                        <th scope="col">موضوع</th>
+                                        <th scope="col">تاریخ</th>
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <th scope="row">فراخوان عمومی از سازندگان تجهیزات گالوانیزه ارتینگ در سطح کشور
+                                                <th scope="row">
+                                                    فراخوان عمومی از سازندگان تجهیزات گالوانیزه ارتینگ در سطح کشور
                                                 </th>
                                                 <td>1400/02/01</td>
 
                                             </tr>
                                             <tr>
-                                                <th scope="row">فراخوان دعوت به همکاری (مدیرتوزیع برق شهرستان پاکدشت)
+                                                <th scope="row">
+                                                    فراخوان دعوت به همکاری (مدیرتوزیع برق شهرستان پاکدشت)
                                                 </th>
                                                 <td>1401/01/19</td>
 
                                             </tr>
                                             <tr>
                                                 <th scope="row">
-                                                    آماده باش شرکت توزیع برق استان تهران برای تامین برق پایدار حوزه ها و مراکز رای گیری انتخابات</th>
+                                                    آماده باش شرکت توزیع برق استان تهران برای تامین برق پایدار حوزه ها و مراکز رای گیری انتخابات
+                                                </th>
                                                 <td colspan="2">1399/09/20</td>
                                             </tr>
                                             <tr>
-                                                <th scope="row">فراخوان عمومی از سازندگان تجهیزات گالوانیزه ارتینگ در سطح کشور
+                                                <th scope="row">
+                                                    فراخوان عمومی از سازندگان تجهیزات گالوانیزه ارتینگ در سطح کشور
                                                 </th>
                                                 <td>1400/02/01</td>
 
                                             </tr>
                                             <tr>
-                                                <th scope="row">فراخوان دعوت به همکاری (مدیرتوزیع برق شهرستان پاکدشت)
+                                                <th scope="row">
+                                                    فراخوان دعوت به همکاری (مدیرتوزیع برق شهرستان پاکدشت)
                                                 </th>
                                                 <td>1401/01/19</td>
 
                                             </tr>
                                             <tr>
                                                 <th scope="row">
-                                                    آماده باش شرکت توزیع برق استان تهران برای تامین برق پایدار حوزه ها و مراکز رای گیری انتخابات</th>
+                                                    آماده باش شرکت توزیع برق استان تهران برای تامین برق پایدار حوزه ها و مراکز رای گیری انتخابات
+                                                </th>
                                                 <td colspan="2">1399/09/20</td>
                                             </tr>
                                             <tr>
-                                                <th scope="row">فراخوان عمومی از سازندگان تجهیزات گالوانیزه ارتینگ در سطح کشور
+                                                <th scope="row">
+                                                    فراخوان عمومی از سازندگان تجهیزات گالوانیزه ارتینگ در سطح کشور
                                                 </th>
                                                 <td>1400/02/01</td>
 
                                             </tr>
                                             <tr>
-                                                <th scope="row">فراخوان دعوت به همکاری (مدیرتوزیع برق شهرستان پاکدشت)
+                                                <th scope="row">
+                                                    فراخوان دعوت به همکاری (مدیرتوزیع برق شهرستان پاکدشت)
                                                 </th>
                                                 <td>1401/01/19</td>
 
                                             </tr>
                                             <tr>
                                                 <th scope="row">
-                                                    آماده باش شرکت توزیع برق استان تهران برای تامین برق پایدار حوزه ها و مراکز رای گیری انتخابات</th>
+                                                    آماده باش شرکت توزیع برق استان تهران برای تامین برق پایدار حوزه ها و مراکز رای گیری انتخابات
+                                                </th>
                                                 <td colspan="2">1399/09/20</td>
                                             </tr>
                                             <tr>
-                                                <th scope="row">فراخوان عمومی از سازندگان تجهیزات گالوانیزه ارتینگ در سطح کشور
+                                                <th scope="row">
+                                                    فراخوان عمومی از سازندگان تجهیزات گالوانیزه ارتینگ در سطح کشور
                                                 </th>
                                                 <td>1400/02/01</td>
 
                                             </tr>
                                             <tr>
-                                                <th scope="row">فراخوان دعوت به همکاری (مدیرتوزیع برق شهرستان پاکدشت)
+                                                <th scope="row">
+                                                    فراخوان دعوت به همکاری (مدیرتوزیع برق شهرستان پاکدشت)
                                                 </th>
                                                 <td>1401/01/19</td>
 
                                             </tr>
                                             <tr>
                                                 <th scope="row">
-                                                    آماده باش شرکت توزیع برق استان تهران برای تامین برق پایدار حوزه ها و مراکز رای گیری انتخابات</th>
+                                                    آماده باش شرکت توزیع برق استان تهران برای تامین برق پایدار حوزه ها و مراکز رای گیری انتخابات
+                                                </th>
                                                 <td colspan="2">1399/09/20</td>
                                             </tr>
                                             <tr>
-                                                <th scope="row">فراخوان عمومی از سازندگان تجهیزات گالوانیزه ارتینگ در سطح کشور
+                                                <th scope="row">
+                                                    فراخوان عمومی از سازندگان تجهیزات گالوانیزه ارتینگ در سطح کشور
                                                 </th>
                                                 <td>1400/02/01</td>
 
                                             </tr>
                                             <tr>
-                                                <th scope="row">فراخوان دعوت به همکاری (مدیرتوزیع برق شهرستان پاکدشت)
+                                                <th scope="row">
+                                                    فراخوان دعوت به همکاری (مدیرتوزیع برق شهرستان پاکدشت)
                                                 </th>
                                                 <td>1401/01/19</td>
 
                                             </tr>
                                             <tr>
                                                 <th scope="row">
-                                                    آماده باش شرکت توزیع برق استان تهران برای تامین برق پایدار حوزه ها و مراکز رای گیری انتخابات</th>
+                                                    آماده باش شرکت توزیع برق استان تهران برای تامین برق پایدار حوزه ها و مراکز رای گیری انتخابات
+                                                </th>
                                                 <td colspan="2">1399/09/20</td>
                                             </tr>
                                         </tbody>
@@ -454,85 +311,99 @@
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <th scope="row">فراخوان عمومی از سازندگان تجهیزات گالوانیزه ارتینگ در سطح کشور
+                                                <th scope="row">
+                                                    فراخوان عمومی از سازندگان تجهیزات گالوانیزه ارتینگ در سطح کشور
                                                 </th>
                                                 <td>1400/02/01</td>
                                                 <td>فعال</td>
                                             </tr>
                                             <tr>
-                                                <th scope="row">فراخوان دعوت به همکاری (مدیرتوزیع برق شهرستان پاکدشت)
+                                                <th scope="row">
+                                                    فراخوان دعوت به همکاری (مدیرتوزیع برق شهرستان پاکدشت)
                                                 </th>
                                                 <td>1401/01/19</td>
                                                 <td>اتمام</td>
                                             </tr>
                                             <tr>
-                                                <th scope="row">فراخوان عمومی از سازندگان تجهیزات گالوانیزه ارتینگ در سطح کشور
+                                                <th scope="row">
+                                                    فراخوان عمومی از سازندگان تجهیزات گالوانیزه ارتینگ در سطح کشور
                                                 </th>
                                                 <td>1400/02/01</td>
                                                 <td>فعال</td>
                                             </tr>
                                             <tr>
-                                                <th scope="row">فراخوان دعوت به همکاری (مدیرتوزیع برق شهرستان پاکدشت)
+                                                <th scope="row">
+                                                    فراخوان دعوت به همکاری (مدیرتوزیع برق شهرستان پاکدشت)
                                                 </th>
                                                 <td>1401/01/19</td>
                                                 <td>اتمام</td>
                                             </tr>
                                             <tr>
-                                                <th scope="row">فراخوان عمومی از سازندگان تجهیزات گالوانیزه ارتینگ در سطح کشور
+                                                <th scope="row">
+                                                    فراخوان عمومی از سازندگان تجهیزات گالوانیزه ارتینگ در سطح کشور
                                                 </th>
                                                 <td>1400/02/01</td>
                                                 <td>فعال</td>
                                             </tr>
                                             <tr>
-                                                <th scope="row">فراخوان دعوت به همکاری (مدیرتوزیع برق شهرستان پاکدشت)
+                                                <th scope="row">
+                                                    فراخوان دعوت به همکاری (مدیرتوزیع برق شهرستان پاکدشت)
                                                 </th>
                                                 <td>1401/01/19</td>
                                                 <td>اتمام</td>
                                             </tr>
                                             <tr>
-                                                <th scope="row">فراخوان عمومی از سازندگان تجهیزات گالوانیزه ارتینگ در سطح کشور
+                                                <th scope="row">
+                                                    فراخوان عمومی از سازندگان تجهیزات گالوانیزه ارتینگ در سطح کشور
                                                 </th>
                                                 <td>1400/02/01</td>
                                                 <td>فعال</td>
                                             </tr>
                                             <tr>
-                                                <th scope="row">فراخوان دعوت به همکاری (مدیرتوزیع برق شهرستان پاکدشت)
+                                                <th scope="row">
+                                                    فراخوان دعوت به همکاری (مدیرتوزیع برق شهرستان پاکدشت)
                                                 </th>
                                                 <td>1401/01/19</td>
                                                 <td>اتمام</td>
                                             </tr>
                                             <tr>
-                                                <th scope="row">فراخوان عمومی از سازندگان تجهیزات گالوانیزه ارتینگ در سطح کشور
+                                                <th scope="row">
+                                                    فراخوان عمومی از سازندگان تجهیزات گالوانیزه ارتینگ در سطح کشور
                                                 </th>
                                                 <td>1400/02/01</td>
                                                 <td>فعال</td>
                                             </tr>
                                             <tr>
-                                                <th scope="row">فراخوان دعوت به همکاری (مدیرتوزیع برق شهرستان پاکدشت)
+                                                <th scope="row">
+                                                    فراخوان دعوت به همکاری (مدیرتوزیع برق شهرستان پاکدشت)
                                                 </th>
                                                 <td>1401/01/19</td>
                                                 <td>اتمام</td>
                                             </tr>
                                             <tr>
-                                                <th scope="row">فراخوان عمومی از سازندگان تجهیزات گالوانیزه ارتینگ در سطح کشور
+                                                <th scope="row">
+                                                    فراخوان عمومی از سازندگان تجهیزات گالوانیزه ارتینگ در سطح کشور
                                                 </th>
                                                 <td>1400/02/01</td>
                                                 <td>فعال</td>
                                             </tr>
                                             <tr>
-                                                <th scope="row">فراخوان دعوت به همکاری (مدیرتوزیع برق شهرستان پاکدشت)
+                                                <th scope="row">
+                                                    فراخوان دعوت به همکاری (مدیرتوزیع برق شهرستان پاکدشت)
                                                 </th>
                                                 <td>1401/01/19</td>
                                                 <td>اتمام</td>
                                             </tr>
                                             <tr>
-                                                <th scope="row">فراخوان عمومی از سازندگان تجهیزات گالوانیزه ارتینگ در سطح کشور
+                                                <th scope="row">
+                                                    فراخوان عمومی از سازندگان تجهیزات گالوانیزه ارتینگ در سطح کشور
                                                 </th>
                                                 <td>1400/02/01</td>
                                                 <td>فعال</td>
                                             </tr>
                                             <tr>
-                                                <th scope="row">فراخوان دعوت به همکاری (مدیرتوزیع برق شهرستان پاکدشت)
+                                                <th scope="row">
+                                                    فراخوان دعوت به همکاری (مدیرتوزیع برق شهرستان پاکدشت)
                                                 </th>
                                                 <td>1401/01/19</td>
                                                 <td>اتمام</td>
@@ -553,85 +424,99 @@
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <th scope="row">فراخوان عمومی از سازندگان تجهیزات گالوانیزه ارتینگ در سطح کشور
+                                                <th scope="row">
+                                                    فراخوان عمومی از سازندگان تجهیزات گالوانیزه ارتینگ در سطح کشور
                                                 </th>
                                                 <td>1400/02/01</td>
                                                 <td>فعال</td>
                                             </tr>
                                             <tr>
-                                                <th scope="row">فراخوان دعوت به همکاری (مدیرتوزیع برق شهرستان پاکدشت)
+                                                <th scope="row">
+                                                    فراخوان دعوت به همکاری (مدیرتوزیع برق شهرستان پاکدشت)
                                                 </th>
                                                 <td>1401/01/19</td>
                                                 <td>اتمام</td>
                                             </tr>
                                             <tr>
-                                                <th scope="row">فراخوان عمومی از سازندگان تجهیزات گالوانیزه ارتینگ در سطح کشور
+                                                <th scope="row">
+                                                    فراخوان عمومی از سازندگان تجهیزات گالوانیزه ارتینگ در سطح کشور
                                                 </th>
                                                 <td>1400/02/01</td>
                                                 <td>فعال</td>
                                             </tr>
                                             <tr>
-                                                <th scope="row">فراخوان دعوت به همکاری (مدیرتوزیع برق شهرستان پاکدشت)
+                                                <th scope="row">
+                                                    فراخوان دعوت به همکاری (مدیرتوزیع برق شهرستان پاکدشت)
                                                 </th>
                                                 <td>1401/01/19</td>
                                                 <td>اتمام</td>
                                             </tr>
                                             <tr>
-                                                <th scope="row">فراخوان عمومی از سازندگان تجهیزات گالوانیزه ارتینگ در سطح کشور
+                                                <th scope="row">
+                                                    فراخوان عمومی از سازندگان تجهیزات گالوانیزه ارتینگ در سطح کشور
                                                 </th>
                                                 <td>1400/02/01</td>
                                                 <td>فعال</td>
                                             </tr>
                                             <tr>
-                                                <th scope="row">فراخوان دعوت به همکاری (مدیرتوزیع برق شهرستان پاکدشت)
+                                                <th scope="row">
+                                                    فراخوان دعوت به همکاری (مدیرتوزیع برق شهرستان پاکدشت)
                                                 </th>
                                                 <td>1401/01/19</td>
                                                 <td>اتمام</td>
                                             </tr>
                                             <tr>
-                                                <th scope="row">فراخوان عمومی از سازندگان تجهیزات گالوانیزه ارتینگ در سطح کشور
+                                                <th scope="row">
+                                                    فراخوان عمومی از سازندگان تجهیزات گالوانیزه ارتینگ در سطح کشور
                                                 </th>
                                                 <td>1400/02/01</td>
                                                 <td>فعال</td>
                                             </tr>
                                             <tr>
-                                                <th scope="row">فراخوان دعوت به همکاری (مدیرتوزیع برق شهرستان پاکدشت)
+                                                <th scope="row">
+                                                    فراخوان دعوت به همکاری (مدیرتوزیع برق شهرستان پاکدشت)
                                                 </th>
                                                 <td>1401/01/19</td>
                                                 <td>اتمام</td>
                                             </tr>
                                             <tr>
-                                                <th scope="row">فراخوان عمومی از سازندگان تجهیزات گالوانیزه ارتینگ در سطح کشور
+                                                <th scope="row">
+                                                    فراخوان عمومی از سازندگان تجهیزات گالوانیزه ارتینگ در سطح کشور
                                                 </th>
                                                 <td>1400/02/01</td>
                                                 <td>فعال</td>
                                             </tr>
                                             <tr>
-                                                <th scope="row">فراخوان دعوت به همکاری (مدیرتوزیع برق شهرستان پاکدشت)
+                                                <th scope="row">
+                                                    فراخوان دعوت به همکاری (مدیرتوزیع برق شهرستان پاکدشت)
                                                 </th>
                                                 <td>1401/01/19</td>
                                                 <td>اتمام</td>
                                             </tr>
                                             <tr>
-                                                <th scope="row">فراخوان عمومی از سازندگان تجهیزات گالوانیزه ارتینگ در سطح کشور
+                                                <th scope="row">
+                                                    فراخوان عمومی از سازندگان تجهیزات گالوانیزه ارتینگ در سطح کشور
                                                 </th>
                                                 <td>1400/02/01</td>
                                                 <td>فعال</td>
                                             </tr>
                                             <tr>
-                                                <th scope="row">فراخوان دعوت به همکاری (مدیرتوزیع برق شهرستان پاکدشت)
+                                                <th scope="row">
+                                                    فراخوان دعوت به همکاری (مدیرتوزیع برق شهرستان پاکدشت)
                                                 </th>
                                                 <td>1401/01/19</td>
                                                 <td>اتمام</td>
                                             </tr>
                                             <tr>
-                                                <th scope="row">فراخوان عمومی از سازندگان تجهیزات گالوانیزه ارتینگ در سطح کشور
+                                                <th scope="row">
+                                                    فراخوان عمومی از سازندگان تجهیزات گالوانیزه ارتینگ در سطح کشور
                                                 </th>
                                                 <td>1400/02/01</td>
                                                 <td>فعال</td>
                                             </tr>
                                             <tr>
-                                                <th scope="row">فراخوان دعوت به همکاری (مدیرتوزیع برق شهرستان پاکدشت)
+                                                <th scope="row">
+                                                    فراخوان دعوت به همکاری (مدیرتوزیع برق شهرستان پاکدشت)
                                                 </th>
                                                 <td>1401/01/19</td>
                                                 <td>اتمام</td>
@@ -651,88 +536,103 @@
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <th scope="row">فراخوان عمومی از سازندگان تجهیزات گالوانیزه ارتینگ در سطح کشور
+                                                <th scope="row">
+                                                    فراخوان عمومی از سازندگان تجهیزات گالوانیزه ارتینگ در سطح کشور
                                                 </th>
                                                 <td>1400/02/01</td>
 
                                             </tr>
                                             <tr>
-                                                <th scope="row">فراخوان دعوت به همکاری (مدیرتوزیع برق شهرستان پاکدشت)
+                                                <th scope="row">
+                                                    فراخوان دعوت به همکاری (مدیرتوزیع برق شهرستان پاکدشت)
                                                 </th>
                                                 <td>1401/01/19</td>
 
                                             </tr>
                                             <tr>
                                                 <th scope="row">
-                                                    آماده باش شرکت توزیع برق استان تهران برای تامین برق پایدار حوزه ها و مراکز رای گیری انتخابات</th>
+                                                    آماده باش شرکت توزیع برق استان تهران برای تامین برق پایدار حوزه ها و مراکز رای گیری انتخابات
+                                                </th>
                                                 <td colspan="2">1399/09/20</td>
                                             </tr>
                                             <tr>
-                                                <th scope="row">فراخوان عمومی از سازندگان تجهیزات گالوانیزه ارتینگ در سطح کشور
+                                                <th scope="row">
+                                                    فراخوان عمومی از سازندگان تجهیزات گالوانیزه ارتینگ در سطح کشور
                                                 </th>
                                                 <td>1400/02/01</td>
 
                                             </tr>
                                             <tr>
-                                                <th scope="row">فراخوان دعوت به همکاری (مدیرتوزیع برق شهرستان پاکدشت)
+                                                <th scope="row">
+                                                    فراخوان دعوت به همکاری (مدیرتوزیع برق شهرستان پاکدشت)
                                                 </th>
                                                 <td>1401/01/19</td>
 
                                             </tr>
                                             <tr>
                                                 <th scope="row">
-                                                    آماده باش شرکت توزیع برق استان تهران برای تامین برق پایدار حوزه ها و مراکز رای گیری انتخابات</th>
+                                                    آماده باش شرکت توزیع برق استان تهران برای تامین برق پایدار حوزه ها و مراکز رای گیری انتخابات
+                                                </th>
                                                 <td colspan="2">1399/09/20</td>
                                             </tr>
                                             <tr>
-                                                <th scope="row">فراخوان عمومی از سازندگان تجهیزات گالوانیزه ارتینگ در سطح کشور
+                                                <th scope="row">
+                                                    فراخوان عمومی از سازندگان تجهیزات گالوانیزه ارتینگ در سطح کشور
                                                 </th>
                                                 <td>1400/02/01</td>
 
                                             </tr>
                                             <tr>
-                                                <th scope="row">فراخوان دعوت به همکاری (مدیرتوزیع برق شهرستان پاکدشت)
+                                                <th scope="row">
+                                                    فراخوان دعوت به همکاری (مدیرتوزیع برق شهرستان پاکدشت)
                                                 </th>
                                                 <td>1401/01/19</td>
 
                                             </tr>
                                             <tr>
                                                 <th scope="row">
-                                                    آماده باش شرکت توزیع برق استان تهران برای تامین برق پایدار حوزه ها و مراکز رای گیری انتخابات</th>
+                                                    آماده باش شرکت توزیع برق استان تهران برای تامین برق پایدار حوزه ها و مراکز رای گیری انتخابات
+                                                </th>
                                                 <td colspan="2">1399/09/20</td>
                                             </tr>
                                             <tr>
-                                                <th scope="row">فراخوان عمومی از سازندگان تجهیزات گالوانیزه ارتینگ در سطح کشور
+                                                <th scope="row">
+                                                    فراخوان عمومی از سازندگان تجهیزات گالوانیزه ارتینگ در سطح کشور
                                                 </th>
                                                 <td>1400/02/01</td>
 
                                             </tr>
                                             <tr>
-                                                <th scope="row">فراخوان دعوت به همکاری (مدیرتوزیع برق شهرستان پاکدشت)
+                                                <th scope="row">
+                                                    فراخوان دعوت به همکاری (مدیرتوزیع برق شهرستان پاکدشت)
                                                 </th>
                                                 <td>1401/01/19</td>
 
                                             </tr>
                                             <tr>
                                                 <th scope="row">
-                                                    آماده باش شرکت توزیع برق استان تهران برای تامین برق پایدار حوزه ها و مراکز رای گیری انتخابات</th>
+                                                    آماده باش شرکت توزیع برق استان تهران برای تامین برق پایدار حوزه ها و مراکز رای گیری انتخابات
+                                                </th>
                                                 <td colspan="2">1399/09/20</td>
                                             </tr>
                                             <tr>
-                                                <th scope="row">فراخوان عمومی از سازندگان تجهیزات گالوانیزه ارتینگ در سطح کشور
+                                                <th scope="row">
+                                                    فراخوان عمومی از سازندگان تجهیزات گالوانیزه ارتینگ در سطح کشور
                                                 </th>
                                                 <td>1400/02/01</td>
 
                                             </tr>
                                             <tr>
-                                                <th scope="row">فراخوان دعوت به همکاری (مدیرتوزیع برق شهرستان پاکدشت)
+                                                <th scope="row">
+                                                    فراخوان دعوت به همکاری (مدیرتوزیع برق شهرستان پاکدشت)
                                                 </th>
                                                 <td>1401/01/19</td>
 
                                             </tr>
                                             <tr>
                                                 <th scope="row">
-                                                    آماده باش شرکت توزیع برق استان تهران برای تامین برق پایدار حوزه ها و مراکز رای گیری انتخابات</th>
+                                                    آماده باش شرکت توزیع برق استان تهران برای تامین برق پایدار حوزه ها و مراکز رای گیری انتخابات
+                                                </th>
                                                 <td colspan="2">1399/09/20</td>
                                             </tr>
                                         </tbody>
@@ -747,12 +647,18 @@
                         <div class="Notif2">
                             <!-- Tabs Section -->
                             <div class="tab ">
-                                <button class="tablinks active" onclick="openCity(event, 'Notif05')">درگاه
-                                    آماری</button>
-                                <button class="tablinks" onclick="openCity(event, 'Notif06')">مدیریت
-                                    مصرف</button>
-                                <button class="tablinks" onclick="openCity(event, 'Notif07')">تحقیق و
-                                    پژوهش</button>
+                                <button class="tablinks active" onclick="openCity(event, 'Notif05')">
+                                    درگاه
+                                    آماری
+                                </button>
+                                <button class="tablinks" onclick="openCity(event, 'Notif06')">
+                                    مدیریت
+                                    مصرف
+                                </button>
+                                <button class="tablinks" onclick="openCity(event, 'Notif07')">
+                                    تحقیق و
+                                    پژوهش
+                                </button>
                                 <button class="tablinks" onclick="openCity(event, 'Notif08')">آرشیو نورآوران</button>
                             </div>
                             <div id="Notif05" class="tabcontent active" style="display: block;">
@@ -1073,8 +979,10 @@
                             <br>
                             <a href="https://tvedc.ir/ContactUs/Feedback.aspx">رسیدگی به شکایات</a>
                             <br>
-                            <a href="https://tvedc.ir/%d8%a8%db%8c%d8%a7%d9%86%db%8c%d9%87_%d9%85%d8%b4%d8%a7%d8%b1%da%a9%d8%aa">راهبرد
-                                مشارکت</a>
+                            <a href="https://tvedc.ir/%d8%a8%db%8c%d8%a7%d9%86%db%8c%d9%87_%d9%85%d8%b4%d8%a7%d8%b1%da%a9%d8%aa">
+                                راهبرد
+                                مشارکت
+                            </a>
                             <br>
                             <a href="https://tvedc.ir/poll">نظرسنجی</a>
                         </div>

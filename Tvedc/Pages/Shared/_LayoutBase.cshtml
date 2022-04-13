@@ -4,10 +4,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>شرکت توزیع نیروی برق استان تهران - @ViewData["Title"]</title>
-    @*<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.rtl.min.css" />*@
+    <title>شرکت توزیع نیروی برق استان تهران</title>
     <link href="/libs/bootstrap/css/bootstrap.rtl.min.css" rel="stylesheet" type="text/css" />
-    <link href="/css/custom1.css" rel="stylesheet" type="text/css" />
+    <link href="/css/html-Temp.css" rel="stylesheet" type="text/css" />
+
     <!-- FavIcons Add -->
     <link rel="apple-touch-icon" sizes="57x57" href="/img/FavIcon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/img/FavIcon/apple-icon-60x60.png">
@@ -31,6 +31,7 @@
 </head>
 <body>
     
+
     <!-- NavBar -->
     <nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top navbarDetails">
         <div class="container-fluid">
@@ -99,11 +100,11 @@
                     </div>
                     <!-- <input class="form-control me-2 SearchBox" type="search" placeholder="جستجو کنید..." aria-label="Search"> -->
                     <a href="/IndexEn.html" target="_self">
-                        <button class="btn btn-success ChangeLNG " role="button">سروش</button>
+                        <button class="ChangeLNG " role="button">سروش</button>
                     </a>
-                    <button type="button" class="btn btn-success ChangeLNG" data-bs-toggle="modal" data-bs-target="#LoginForm">ورود</button>
+                    <button type="button" class="ChangeLNG" data-bs-toggle="modal" data-bs-target="#LoginForm">ورود</button>
                     <a href="/IndexEn.html" target="_self">
-                        <button class="btn btn-success ChangeLNG" role="button">EN</button>
+                        <button class="ChangeLNG" role="button">EN</button>
                     </a>
                 </form>
                 <!-- LoginForm -->
@@ -228,10 +229,13 @@
             </div>
         </nav>
     </div>
+     <div class="SiteMap">
+                <span>صفحه اصلی</span>
+                <span>xxx</span>
+            </div>
     
     @RenderBody()
-
-    <!-- Footer -->
+ <!-- Footer -->
     <div class="container-fluid">
         <section class="footerbg">
             <div class="col-sm-12">
@@ -333,7 +337,6 @@
     <script src="/js/jquery-3.6.0.min.js"></script>
     <script src="/libs/bootstrap/js/bootstrap.min.js"></script>
     <script src="/js/customjs.js"></script>
-    @*<script src="/js/mainjs.js"></script>*@
 
     @await RenderSectionAsync("Scripts", required: false)
 </body>

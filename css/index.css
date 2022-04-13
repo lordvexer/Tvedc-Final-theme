@@ -1,9 +1,9 @@
         @font-face {
             font-family: "iranyekan";
-            src: url("/Fonts/iranyekanwebmedium.eot");
-            src: url("/Fonts/iranyekanwebmedium.woff") format("woff");
-            src: url("/Fonts/iranyekanwebblack.eot");
-            src: url("/Fonts/iranyekanwebblack.woff") format("woff");
+            src: url("/libs/Fonts/iranyekanwebmedium.eot");
+            src: url("/libs/Fonts/iranyekanwebmedium.woff") format("woff");
+            src: url("/libs/Fonts/iranyekanwebblack.eot");
+            src: url("/libs/Fonts/iranyekanwebblack.woff") format("woff");
         }
         
         body {
@@ -372,11 +372,16 @@
             margin-right: 6px;
             color: white;
             height: 38px;
+            border-radius: 4px;
         }
         
         .ChangeLNG:hover {
             background-color: #cacaca;
             color: white;
+        }
+        
+        .ChangeLNG:active {
+            background-color: #daa000;
         }
         
         .LoginBtn {
@@ -407,10 +412,9 @@
         }
         
         .TempBase {
-            height: 500px;
+            height: fit-content;
             background: white;
             border-radius: 8px;
-            margin: 15px;
             padding: 10px;
             z-index: 1;
         }
@@ -419,10 +423,11 @@
             height: 50px;
             background: white;
             border-radius: 8px;
-            margin: 15px;
+            margin-bottom: 25px;
             padding: 14px;
             z-index: 1;
             color: #5a5a5a;
+            width: 100%;
         }
         
         .carousel-caption {
@@ -569,9 +574,8 @@
         /* Tabs */
         
         .tab {
-            overflow: hidden;
+            overflow: overlay;
             border-radius: 5px 5px 0px 0px;
-            height: 55px;
             /* background: linear-gradient(30deg, rgb(255, 170, 0) 0%, rgba(243, 191, 18, 1) 100%); */
             background: #ffbb00;
         }
@@ -1003,3 +1007,4 @@
             font-size: 15px!important;
             font-family: 'Courier New', Courier, monospace;
         }
+        /* Modiran PAge */
