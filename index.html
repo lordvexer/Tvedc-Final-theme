@@ -340,12 +340,31 @@
                     <div class="col-xs-12  col-sm-12 col-md-6 col-lg-6 col-xl-5">
                         <div class="Notif1">
                             <!-- Tabs Section -->
-                            <div class="tab ">
-                                <button class="tablinks active" onclick="openCity(event, 'Notif01')">اطلاعیه ها</button>
-                                <button class="tablinks" onclick="openCity(event, 'Notif02')">مناقصات</button>
-                                <button class="tablinks" onclick="openCity(event, 'Notif03')">مزایدات</button>
-                                <button class="tablinks" onclick="openCity(event, 'Notif04')">فراخوان</button>
-                            </div>
+                            <nav id="menu-container" class="arrow">
+                                <div id="btn-nav-previous" style="fill: #FFF">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                                        <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
+                                        <path d="M0 0h24v24H0z" fill="none" />
+                                    </svg>
+                                </div>
+                                <div id="btn-nav-next">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                                        <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
+                                        <path d="M0 0h24v24H0z" fill="none" />
+                                    </svg>
+                                </div>
+                                <div class="menu-inner-box">
+                                    <div class="menu">
+                                        <button class="menu-item tablinks active" onclick="openCity(event, 'Notif01')">اطلاعیه ها</button>
+                                        <button class="menu-item tablinks" onclick="openCity(event, 'Notif04')"> مناقصات
+                                            </button>
+                                        <button class="menu-item tablinks" onclick="openCity(event, 'Notif02')">مزایدات
+                                            </button>
+                                        <button class="menu-item tablinks" onclick="openCity(event, 'Notif03')" style="margin-left: 59px;">فراخوان  
+                                            </button>
+                                    </div>
+                                </div>
+                            </nav>
                             <div id="Notif01" class="tabcontent active" style="display: block;">
                                 <div class="Tablefix">
                                     <table class="table TableGUI">
@@ -747,15 +766,31 @@
                     <div class="col-xs-12  col-sm-12 col-md-6 col-lg-4 col-xl-4">
                         <div class="Notif2">
                             <!-- Tabs Section -->
-                            <div class="tab ">
-                                <button class="tablinks active" onclick="openCity(event, 'Notif05')">درگاه
-                                    آماری</button>
-                                <button class="tablinks" onclick="openCity(event, 'Notif06')">مدیریت
-                                    مصرف</button>
-                                <button class="tablinks" onclick="openCity(event, 'Notif07')">تحقیق و
-                                    پژوهش</button>
-                                <button class="tablinks" onclick="openCity(event, 'Notif08')">آرشیو نورآوران</button>
-                            </div>
+                            <nav id="menu-container" class="arrow">
+                                <div id="btn-nav-previous2" style="fill: #FFF">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                                        <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
+                                        <path d="M0 0h24v24H0z" fill="none" />
+                                    </svg>
+                                </div>
+                                <div id="btn-nav-next2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                                        <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
+                                        <path d="M0 0h24v24H0z" fill="none" />
+                                    </svg>
+                                </div>
+                                <div class="menu-inner-box2">
+                                    <div class="menu">
+                                        <button class="menu-item tablinks active" onclick="openCity(event, 'Notif05')">درگاه آماری</button>
+                                        <button class="menu-item tablinks" onclick="openCity(event, 'Notif06')">مدیریت مصرف 
+                                            </button>
+                                        <button class="menu-item tablinks" onclick="openCity(event, 'Notif07')">تحقیق و پژوهش
+                                            </button>
+                                        <button class="menu-item tablinks" onclick="openCity(event, 'Notif08')" style="margin-left: 59px;">آرشیو نورآوران  
+                                            </button>
+                                    </div>
+                                </div>
+                            </nav>
                             <div id="Notif05" class="tabcontent active" style="display: block;">
                                 <div class="Tablefix">
                                     <table class="table TableGUI">
