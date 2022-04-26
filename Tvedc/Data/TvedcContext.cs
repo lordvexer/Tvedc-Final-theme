@@ -10,5 +10,6 @@ namespace Tvedc.Data
         }
 
         public DbSet<Menu> Menus { get; set; }
+        public DbSet<Tender> Tenders { get; set; }
     }
 }

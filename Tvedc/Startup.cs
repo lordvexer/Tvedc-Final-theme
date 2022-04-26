@@ -29,6 +29,7 @@ namespace Tvedc
         {
             services.AddRazorPages();
             services.AddScoped<IMenuService, MenuService>();
+            services.AddScoped<ITenderService, TenderService>();
             services.AddDbContext<DataContext>(opt => opt.UseSqlServer(Configuration.GetConnectionString("NewsConnection")));
             services.AddDbContext<TvedcContext>(opt => opt.UseSqlServer(Configuration.GetConnectionString("Default")));
         }

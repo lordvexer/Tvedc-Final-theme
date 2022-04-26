@@ -165,12 +165,10 @@
                                 <div class="menu-inner-box">
                                     <div class="menu">
                                         <button class="menu-item tablinks active" onclick="openCity(event, 'Notif01')">اطلاعیه ها</button>
-                                        <button class="menu-item tablinks" onclick="openCity(event, 'Notif04')"> مناقصات
-                                            </button>
-                                        <button class="menu-item tablinks" onclick="openCity(event, 'Notif02')">مزایدات
-                                            </button>
-                                        <button class="menu-item tablinks" onclick="openCity(event, 'Notif03')" style="margin-left: 59px;">فراخوان  
-                                            </button>
+                                        <button class="menu-item tablinks" onclick="openCity(event, 'Notif04')"> مناقصات</button>
+                                        <button class="menu-item tablinks" onclick="openCity(event, 'Notif02')">مزایدات</button>
+                                        <button class="menu-item tablinks" onclick="openCity(event, 'Notif03')" style="margin-left: 59px;">فراخوان   </button>
+                                           
                                     </div>
                                 </div>
                             </nav>
@@ -186,13 +184,11 @@
                                                 <th scope="row">فراخوان عمومی از سازندگان تجهیزات گالوانیزه ارتینگ در سطح کشور
                                                 </th>
                                                 <td>1400/02/01</td>
-
                                             </tr>
                                             <tr>
                                                 <th scope="row">فراخوان دعوت به همکاری (مدیرتوزیع برق شهرستان پاکدشت)
                                                 </th>
                                                 <td>1401/01/19</td>
-
                                             </tr>
                                             <tr>
                                                 <th scope="row">
@@ -476,94 +472,22 @@
                                             <tr>
                                                 <th scope="col">موضوع</th>
                                                 <th scope="col">تاریخ</th>
+                                                <th scope="col">کد</th>
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <tr>
-                                                <th scope="row">فراخوان عمومی از سازندگان تجهیزات گالوانیزه ارتینگ در سطح کشور
-                                                </th>
-                                                <td>1400/02/01</td>
-
+                                            @for (var i = 0; i < Model.Tenders.Count; i++)
+                                        {
+                                            var tender = Model.Tenders[i];
+                                            var trclass = "";
+                                            if (tender.SaleDateTo < DateTime.Now) trclass = "tender-end";
+                                            <tr class="@trclass">
+                                            
+                                                <td>@tender.Subject</td>
+                                                <td>@PersianDate.Standard.ConvertDate.ToFa(tender.SaleDateTo, "yyyy/MM/dd")</td>
+                                                <td>@tender.Code</td>
                                             </tr>
-                                            <tr>
-                                                <th scope="row">فراخوان دعوت به همکاری (مدیرتوزیع برق شهرستان پاکدشت)
-                                                </th>
-                                                <td>1401/01/19</td>
-
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">
-                                                    آماده باش شرکت توزیع برق استان تهران برای تامین برق پایدار حوزه ها و مراکز رای گیری انتخابات</th>
-                                                <td colspan="2">1399/09/20</td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">فراخوان عمومی از سازندگان تجهیزات گالوانیزه ارتینگ در سطح کشور
-                                                </th>
-                                                <td>1400/02/01</td>
-
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">فراخوان دعوت به همکاری (مدیرتوزیع برق شهرستان پاکدشت)
-                                                </th>
-                                                <td>1401/01/19</td>
-
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">
-                                                    آماده باش شرکت توزیع برق استان تهران برای تامین برق پایدار حوزه ها و مراکز رای گیری انتخابات</th>
-                                                <td colspan="2">1399/09/20</td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">فراخوان عمومی از سازندگان تجهیزات گالوانیزه ارتینگ در سطح کشور
-                                                </th>
-                                                <td>1400/02/01</td>
-
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">فراخوان دعوت به همکاری (مدیرتوزیع برق شهرستان پاکدشت)
-                                                </th>
-                                                <td>1401/01/19</td>
-
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">
-                                                    آماده باش شرکت توزیع برق استان تهران برای تامین برق پایدار حوزه ها و مراکز رای گیری انتخابات</th>
-                                                <td colspan="2">1399/09/20</td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">فراخوان عمومی از سازندگان تجهیزات گالوانیزه ارتینگ در سطح کشور
-                                                </th>
-                                                <td>1400/02/01</td>
-
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">فراخوان دعوت به همکاری (مدیرتوزیع برق شهرستان پاکدشت)
-                                                </th>
-                                                <td>1401/01/19</td>
-
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">
-                                                    آماده باش شرکت توزیع برق استان تهران برای تامین برق پایدار حوزه ها و مراکز رای گیری انتخابات</th>
-                                                <td colspan="2">1399/09/20</td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">فراخوان عمومی از سازندگان تجهیزات گالوانیزه ارتینگ در سطح کشور
-                                                </th>
-                                                <td>1400/02/01</td>
-
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">فراخوان دعوت به همکاری (مدیرتوزیع برق شهرستان پاکدشت)
-                                                </th>
-                                                <td>1401/01/19</td>
-
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">
-                                                    آماده باش شرکت توزیع برق استان تهران برای تامین برق پایدار حوزه ها و مراکز رای گیری انتخابات</th>
-                                                <td colspan="2">1399/09/20</td>
-                                            </tr>
+                                        }
                                         </tbody>
                                     </table>
                                 </div>

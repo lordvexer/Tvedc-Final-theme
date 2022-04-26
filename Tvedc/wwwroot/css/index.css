@@ -1142,3 +1142,7 @@ tr:hover {
     font-family: 'Courier New', Courier, monospace;
 }
 /* Modiran PAge */
+.tender-end {
+    font-style: italic;
+    text-decoration: underline;
+}
