@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using AutoMapper;
+using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -11,65 +12,33 @@ namespace Tvedc.Services
     public class TenderService : ITenderService
     {
         private readonly TvedcContext _context;
+        private readonly IMapper _mapper;
 
-        public TenderService(TvedcContext context)
+        public TenderService(TvedcContext context, IMapper mapper)
         {
             this._context = context;
+            this._mapper = mapper;
         }
 
         public async Task<List<AuctionDto>> GetLastAuctions()
         {
-            return await _context.Auctions
+            var auctions = await _context.Auctions
                 .Where(p => p.Visible)
                 .OrderByDescending(p => p.SaleDateTo)
                 .Take(10)
-                .Select(p => new AuctionDto
-                {
-                    PacketBazgoshayeeLocation = p.PacketBazgoshayeeLocation,
-                    Code = p.Code,
-                    PacketDeliveryDate = p.PacketDeliveryDate,
-                    PacketBazgoshayeeDate = p.PacketBazgoshayeeDate,
-                    IsSaleDocuments = p.IsSaleDocuments,
-                    CompanyGuarantyUnit = p.CompanyGuarantyUnit,
-                    FileName = p.FileName,
-                    ID = p.ID,
-                    PacketDeliveryLocation = p.PacketDeliveryLocation,
-                    SaleDateFrom = p.SaleDateFrom,
-                    SaleDateTo = p.SaleDateTo,
-                    Subject = p.Subject,
-                    TelNo = p.TelNo,
-                    AuctionDescription = p.AuctionDescription,
-                    AuctionDescriptionSummary = p.AuctionDescriptionSummary,
-                })
                 .ToListAsync();
+            return _mapper.Map<List<AuctionDto>>(auctions);
         }
 
         public async Task<List<TenderDto>> GetLastTenders()
         {
-            return await _context.Tenders
+            var tenders = await _context.Tenders
                 .Where(p => p.Visible)
                 .OrderByDescending(p => p.SaleDateTo)
                 .Take(10)
-                .Select(p => new TenderDto
-                {
-                    PacketBazgoshayeeLocation = p.PacketBazgoshayeeLocation,
-                    Code = p.Code,
-                    PacketDeliveryDate = p.PacketDeliveryDate,
-                    PacketBazgoshayeeDate = p.PacketBazgoshayeeDate,
-                    IsSaleDocuments = p.IsSaleDocuments,
-                    CompanyGuarantyUnit = p.CompanyGuarantyUnit,
-                    FileName = p.FileName,
-                    ID = p.ID,
-                    PacketDeliveryLocation = p.PacketDeliveryLocation,
-                    RequireGrade = p.RequireGrade,
-                    SaleDateFrom = p.SaleDateFrom,
-                    SaleDateTo = p.SaleDateTo,
-                    Subject = p.Subject,
-                    TelNo = p.TelNo,
-                    TenderDescription = p.TenderDescription,
-                    TenderDescriptionSummary = p.TenderDescriptionSummary,
-                })
                 .ToListAsync();
+
+            return _mapper.Map<List<TenderDto>>(tenders);
         }
     }
 }

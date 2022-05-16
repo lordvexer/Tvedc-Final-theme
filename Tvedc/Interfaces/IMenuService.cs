@@ -1,12 +1,12 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
-using Tvedc.Entities;
+using Tvedc.Dtos;
 
 namespace Tvedc.Interfaces
 {
     public interface IMenuService
     {
-        Task<List<Menu>> RootMainMenusAsync(int Level);
-        Task<List<Menu>> MainMenusByParentIdAsync(int ParentId);
+        Task<List<MenuDto>> RootMainMenusAsync(int Level);
+        Task<List<MenuDto>> MainMenusByParentIdAsync(int ParentId);
     }
 }
