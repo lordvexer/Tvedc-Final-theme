@@ -12,6 +12,8 @@ using System.Threading.Tasks;
 using Tvedc.Data;
 using Tvedc.Interfaces;
 using Tvedc.Services;
+using AutoMapper;
+using Tvedc.Infrastructure;
 
 namespace Tvedc
 {
@@ -27,9 +29,11 @@ namespace Tvedc
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddAutoMapper(typeof(MapperProfile));
             services.AddRazorPages();
             services.AddScoped<IMenuService, MenuService>();
             services.AddScoped<ITenderService, TenderService>();
+            services.AddScoped<ICensusService, CensusService>();
             services.AddDbContext<DataContext>(opt => opt.UseSqlServer(Configuration.GetConnectionString("NewsConnection")));
             services.AddDbContext<TvedcContext>(opt => opt.UseSqlServer(Configuration.GetConnectionString("Default")));
         }

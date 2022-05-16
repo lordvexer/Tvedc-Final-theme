@@ -19,18 +19,22 @@ namespace Tvedc.Pages
         private readonly DataContext _context;
         private readonly IConfiguration _config;
         private readonly ITenderService _tenderService;
+        private readonly ICensusService _censusService;
 
-        public IndexModel(ILogger<IndexModel> logger, DataContext context, IConfiguration config, ITenderService tenderService)
+        public IndexModel(ILogger<IndexModel> logger, DataContext context, IConfiguration config, ITenderService tenderService, ICensusService censusService)
         {
             _logger = logger;
             this._context = context;
             this._config = config;
             this._tenderService = tenderService;
+            this._censusService = censusService;
         }
 
         public List<News> News { get; set; }
         public List<NewsForArchive> NewsForArchivesNews { get; set; }
         public List<TenderDto> Tenders { get; set; }
+        public List<AuctionDto> Auctions { get; set; }
+        public List<FileDto> Files { get; set; }
 
         public async Task OnGetAsync()
         {
@@ -40,6 +44,8 @@ namespace Tvedc.Pages
             NewsForArchivesNews = _context.NewsForArchives.OrderByDescending(p=> p.NewsDate).Take(newsForArchiveCount).ToList();
 
             Tenders = await _tenderService.GetLastTenders();
+            Auctions = await _tenderService.GetLastAuctions();
+            Files = await _censusService.GetFilesAsync();
         }
     }
 }

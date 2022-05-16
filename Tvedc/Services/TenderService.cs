@@ -16,6 +16,34 @@ namespace Tvedc.Services
         {
             this._context = context;
         }
+
+        public async Task<List<AuctionDto>> GetLastAuctions()
+        {
+            return await _context.Auctions
+                .Where(p => p.Visible)
+                .OrderByDescending(p => p.SaleDateTo)
+                .Take(10)
+                .Select(p => new AuctionDto
+                {
+                    PacketBazgoshayeeLocation = p.PacketBazgoshayeeLocation,
+                    Code = p.Code,
+                    PacketDeliveryDate = p.PacketDeliveryDate,
+                    PacketBazgoshayeeDate = p.PacketBazgoshayeeDate,
+                    IsSaleDocuments = p.IsSaleDocuments,
+                    CompanyGuarantyUnit = p.CompanyGuarantyUnit,
+                    FileName = p.FileName,
+                    ID = p.ID,
+                    PacketDeliveryLocation = p.PacketDeliveryLocation,
+                    SaleDateFrom = p.SaleDateFrom,
+                    SaleDateTo = p.SaleDateTo,
+                    Subject = p.Subject,
+                    TelNo = p.TelNo,
+                    AuctionDescription = p.AuctionDescription,
+                    AuctionDescriptionSummary = p.AuctionDescriptionSummary,
+                })
+                .ToListAsync();
+        }
+
         public async Task<List<TenderDto>> GetLastTenders()
         {
             return await _context.Tenders

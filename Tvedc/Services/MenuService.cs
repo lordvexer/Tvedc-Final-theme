@@ -20,6 +20,7 @@ namespace Tvedc.Services
         {
             return await _context.Menus
                 .Where(p => p.Level == Level && !p.ParentId.HasValue && p.Visible && p.IsMainMenu.HasValue && p.IsMainMenu.Value)
+                .OrderBy(p=> p.DisplayOrder)
                 .ToListAsync();
 
         }
@@ -28,6 +29,7 @@ namespace Tvedc.Services
         {
             return await _context.Menus
                 .Where(p => p.ParentId.HasValue && p.ParentId == ParentId && p.Visible && p.IsMainMenu.HasValue && p.IsMainMenu.Value)
+                .OrderBy(p=> p.DisplayOrder)
                 .ToListAsync();
         }
     }

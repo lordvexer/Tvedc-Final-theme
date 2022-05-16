@@ -278,90 +278,18 @@
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <tr>
-                                                <th scope="row">فراخوان عمومی از سازندگان تجهیزات گالوانیزه ارتینگ در سطح کشور
-                                                </th>
-                                                <td>1400/02/01</td>
-                                                <td>فعال</td>
+                                            @for (var i = 0; i < Model.Auctions.Count; i++)
+                                        {
+                                            var auction = Model.Auctions[i];
+                                            var trclass = "";
+                                            if (auction.SaleDateTo < DateTime.Now) trclass = "tender-end";
+                                            <tr class="@trclass">
+                                            
+                                                <td>@auction.Subject</td>
+                                                <td>@PersianDate.Standard.ConvertDate.ToFa(auction.SaleDateTo, "yyyy/MM/dd")</td>
+                                                <td>@auction.Code</td>
                                             </tr>
-                                            <tr>
-                                                <th scope="row">فراخوان دعوت به همکاری (مدیرتوزیع برق شهرستان پاکدشت)
-                                                </th>
-                                                <td>1401/01/19</td>
-                                                <td>اتمام</td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">فراخوان عمومی از سازندگان تجهیزات گالوانیزه ارتینگ در سطح کشور
-                                                </th>
-                                                <td>1400/02/01</td>
-                                                <td>فعال</td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">فراخوان دعوت به همکاری (مدیرتوزیع برق شهرستان پاکدشت)
-                                                </th>
-                                                <td>1401/01/19</td>
-                                                <td>اتمام</td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">فراخوان عمومی از سازندگان تجهیزات گالوانیزه ارتینگ در سطح کشور
-                                                </th>
-                                                <td>1400/02/01</td>
-                                                <td>فعال</td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">فراخوان دعوت به همکاری (مدیرتوزیع برق شهرستان پاکدشت)
-                                                </th>
-                                                <td>1401/01/19</td>
-                                                <td>اتمام</td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">فراخوان عمومی از سازندگان تجهیزات گالوانیزه ارتینگ در سطح کشور
-                                                </th>
-                                                <td>1400/02/01</td>
-                                                <td>فعال</td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">فراخوان دعوت به همکاری (مدیرتوزیع برق شهرستان پاکدشت)
-                                                </th>
-                                                <td>1401/01/19</td>
-                                                <td>اتمام</td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">فراخوان عمومی از سازندگان تجهیزات گالوانیزه ارتینگ در سطح کشور
-                                                </th>
-                                                <td>1400/02/01</td>
-                                                <td>فعال</td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">فراخوان دعوت به همکاری (مدیرتوزیع برق شهرستان پاکدشت)
-                                                </th>
-                                                <td>1401/01/19</td>
-                                                <td>اتمام</td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">فراخوان عمومی از سازندگان تجهیزات گالوانیزه ارتینگ در سطح کشور
-                                                </th>
-                                                <td>1400/02/01</td>
-                                                <td>فعال</td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">فراخوان دعوت به همکاری (مدیرتوزیع برق شهرستان پاکدشت)
-                                                </th>
-                                                <td>1401/01/19</td>
-                                                <td>اتمام</td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">فراخوان عمومی از سازندگان تجهیزات گالوانیزه ارتینگ در سطح کشور
-                                                </th>
-                                                <td>1400/02/01</td>
-                                                <td>فعال</td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">فراخوان دعوت به همکاری (مدیرتوزیع برق شهرستان پاکدشت)
-                                                </th>
-                                                <td>1401/01/19</td>
-                                                <td>اتمام</td>
-                                            </tr>
+                                        }
                                         </tbody>
                                     </table>
                                 </div>
@@ -533,69 +461,13 @@
                                             </tr>
                                         </thead>
                                         <tbody>
+                                            @for (var i = 0; i < Model.Files.Count; i++)
+                                        {
+                                            var file = Model.Files[i];
                                             <tr>
-                                                <th scope="row">شاخص های آماری سال 1399</th>
+                                                <td><a href="https://tvedc.ir/Web/Handler/DownloadHandler.ashx?type=census&ID=@file.ID" target="_blank">@file.Title</a></td>
                                             </tr>
-                                            <tr>
-                                                <th scope="row">کارنامه آماری سال 1399 </th>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">شاخص های آماری سال 1398 </th>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">شاخص های آماری سال 1399</th>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">کارنامه آماری سال 1399 </th>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">شاخص های آماری سال 1398 </th>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">شاخص های آماری سال 1399</th>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">کارنامه آماری سال 1399 </th>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">شاخص های آماری سال 1398 </th>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">شاخص های آماری سال 1399</th>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">کارنامه آماری سال 1399 </th>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">شاخص های آماری سال 1398 </th>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">شاخص های آماری سال 1399</th>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">کارنامه آماری سال 1399 </th>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">شاخص های آماری سال 1398 </th>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">شاخص های آماری سال 1399</th>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">کارنامه آماری سال 1399 </th>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">شاخص های آماری سال 1398 </th>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">شاخص های آماری سال 1399</th>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">کارنامه آماری سال 1399 </th>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">شاخص های آماری سال 1398 </th>
-                                            </tr>
+                                        }
                                         </tbody>
                                     </table>
                                 </div>

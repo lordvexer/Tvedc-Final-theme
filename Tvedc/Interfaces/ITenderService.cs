@@ -7,5 +7,6 @@ namespace Tvedc.Interfaces
     public interface ITenderService
     {
         Task<List<TenderDto>> GetLastTenders();
+        Task<List<AuctionDto>> GetLastAuctions();
     }
 }
