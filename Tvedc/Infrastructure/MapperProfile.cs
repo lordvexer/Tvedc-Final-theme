@@ -13,5 +13,6 @@ namespace Tvedc.Infrastructure
             CreateMap<Entities.Auction, Dtos.AuctionDto>();
             CreateMap<Entities.Tender, Dtos.TenderDto>();
             CreateMap<Entities.Menu, Dtos.MenuDto>();
+        }
     }
 }
