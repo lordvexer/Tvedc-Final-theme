@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>شرکت توزیع نیروی برق استان تهران</title>
+    <link href="../../libs/bootstrap/css/bootstrap.rtl.min.css" rel="stylesheet" type="text/css" />
+    <link href="../../libs/bootstrap/css/bootstrap.rtl.min.css" rel="stylesheet" type="text/css" />
+    <link href="../../css/index.css" rel="stylesheet" type="text/css" />
+    <link href="css&js\login.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+
+    <!-- NavBar -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top navbarDetails">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://tvedc.ir">صفحه اصلی</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://forum.tvedc.ir/">تالار گفتگو</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://shafaf.tvedc.ir/">سامانه شفافیت</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://tvedc.ir/poll">نظرسنجی</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://tvedc.ir/faq.aspx">سوالات متداول</a>
+                    </li>
+                </ul>
+            </div>
+            <form class="d-flex  ">
+                <div class="search-wrapper">
+                    <div class="input-holder">
+                        <input type="text" class="search-input" placeholder="جستجو کنید..." />
+                        <button class="search-icon ChangeLNG"
+                            onclick="searchToggle(this, event);"><span></span></button>
+                    </div>
+                    <span class="close" onclick="searchToggle(this, event);"></span>
+                </div>
+                <a href="/IndexEn.html" target="_self">
+                    <button class="ChangeLNG " role="button">سروش</button>
+                </a>
+                <a href="/IndexEn.html" target="_self">
+                    <button class="ChangeLNG" role="button">EN</button>
+                </a>
+            </form>
+        </div>
+    </nav>
+
+    <!-- Loginform -->
+    <div class="row BackgroundSet">
+        <div class="col-6 LoginSection">
+            <div class="NormalLogin" id="NormalLogin">
+                <input class="Logininput" type="checkbox" id="chk" aria-hidden="true" />
+                <input class="Logininput" type="checkbox" id="chk_register" aria-hidden="true" />
+                <div class="signin">
+                    <form autocomplete="on">
+                        <label class="Loginlabel" for="chk" aria-hidden="true">وارد شوید</label>
+                        <input class="Logininput" type="text" name="txt" placeholder="نام کاربری" required="" />
+                        <input class="Logininput" type="password" name="pswd" placeholder="کلمه عبور" required="" />
+                        <button class="Loginbutton" onclick="Login()">ورود</button>
+                    </form>
+                </div>
+                <div class="ForgetPass">
+                    <div class="ForgetPassField" id="ForgetPassField">
+                        <form>
+                            <label class="Loginlabel" for="chk" aria-hidden="true">فراموشی رمز عبور</label>
+                            <input class="Logininput" type="tel" id="phone" name="phone" placeholder="تلفن همراه"
+                                pattern="[0]{1}[9]{1}[0-9]{9}" required />
+                            <button class="Loginbutton" onclick="ResetPassword()">ارسال رمز</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="AfterLogin" id="AfterLogin">
+                <form>
+                    <label class="Loginlabel" for="chk" aria-hidden="true">رمز موقت را وارد کنید</label>
+                    <input class="Logininput" type="number"  placeholder="رمز موقت" required="" />
+                    <button class="Loginbutton">ارسال مجدد</button>
+                    <button class="Loginbutton">ورود</button>
+                </form>
+            </div>
+            <div class="ResetPassword" id="ResetPassword" style="display: none">
+                <form>
+                    <label class="Loginlabel" for="chk" aria-hidden="true">رمز عبور جدید را وارد کنید</label>
+                    <input class="Logininput" type="number" name="txt" placeholder="رمز موقت ارسال شده"
+                        required="" />
+                    <input class="Logininput" type="text" name="txt" placeholder="رمز جدید" required="" />
+                    <input class="Logininput" type="text" name="txt" placeholder="تکرار رمز جدید" required="" />
+                    <button class="Loginbutton">ارسال مجدد</button>
+                    <button class="Loginbutton">ورود</button>
+                </form>
+            </div>
+        </div>
+        <div class="col-6 NewsSide d-none d-lg-block">
+            <div class="card NewsNotif">
+
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <div class="container-fluid">
+        <section class="footerbg">
+            <div class="col-sm-12">
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                        <div class="footerBoxes">
+                            <img class="Footer_icon" width="100px" src="/img/IconsMenu/Footer/settings.png" alt="">
+                            <br>
+                            <h5 class="FooterItems">سایر خدمات</h5>
+                            <a href="https://tvedc.ir/login.aspx">پیمانکاران</a>
+                            <br>
+                            <a href="https://tvedc.ir/MM/Default.aspx">سازندگان و تامین کنندگان کالای دارای صلاحیت</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                        <div class="footerBoxes">
+                            <img class="Footer_icon" width="100px" src="/img/IconsMenu/Footer/laws.png" alt="">
+                            <br>
+                            <h5 class="FooterItems">الزامات قانونی</h5>
+                            <a href="https://tvedc.ir/sla">توافقنامه سطح خدمت</a>
+                            <br>
+                            <a href="https://tvedc.ir/update-instructions">دستورالعمل بروزرسانی</a>
+                            <br>
+                            <a href="https://tvedc.ir/privacy">بیانیه حریم خصوصی</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                        <div class="footerBoxes">
+                            <img class="Footer_icon" width="100px" src="/img/IconsMenu/Footer/worldwide.png" alt="">
+                            <br>
+                            <h5 class="FooterItems">پیوندها</h5>
+                            <a href="http://www.leader.ir/">دفتر مقام معظم رهبری</a>
+                            <br>
+                            <a href="http://www.president.ir/">ریاست جمهوری</a>
+                            <br>
+                            <a href="http://www.moe.gov.ir/">وزارت نیرو</a>
+                            <br>
+                            <a href="http://www.tavanir.org.ir/">توانیر</a>
+                            <br>
+                            <a href="http://www.iran.ir/">پرتال ملی و استانی</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                        <div class="footerBoxes">
+                            <img class="Footer_icon" width="100px" src="/img/IconsMenu/Footer/vote.png" alt="">
+                            <br>
+                            <h5 class="FooterItems">مشارکت الکترونیک</h5>
+                            <a href="https://tvedc.ir/ContactUs.aspx">پیشنهادات و انتقادات</a>
+                            <br>
+                            <a href="https://tvedc.ir/ContactUs/Feedback.aspx">رسیدگی به شکایات</a>
+                            <br>
+                            <a
+                                href="https://tvedc.ir/%d8%a8%db%8c%d8%a7%d9%86%db%8c%d9%87_%d9%85%d8%b4%d8%a7%d8%b1%da%a9%d8%aa">راهبرد
+                                مشارکت</a>
+                            <br>
+                            <a href="https://tvedc.ir/poll">نظرسنجی</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                        <div class="footerBoxes">
+                            <img class="Footer_icon" width="100px" src="/img/IconsMenu/Footer/market-analysis.png"
+                                alt="">
+                            <br>
+                            <h5 class="FooterItems">آمار بازدید</h5>
+                            <h6>بازدید تاکنون: 32,358,219</h6>
+                            <h6>کاربران آنلاین: 27</h6>
+                            <h6>بازدید کننده: 0</h6>
+                            <h6>تاریخ بروزرسانی: 1400/08/09 08:16</h6>
+                        </div>
+                    </div>
+                    <div class="d-none d-lg-block d-xl-none col-lg-3">
+                        <div class="footerBoxes">
+                            <img class="Footer_icon" width="100px" src="/img/IconsMenu/Footer/idea.png" alt="">
+                            <br>
+                            <h5 class="FooterItems">سخن روز</h5>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-6 col-xl-2">
+                        <div class="footerBoxes">
+                            <img class="Footer_icon" width="100px" src="/img/IconsMenu/Footer/headset.png" alt="">
+                            <br>
+                            <h5 class="FooterItems">ارتباط با ما</h5>
+                            <h6>آدرس : تهران - میدان شهدا - پلاک 0</h6>
+                            <a href="tell:02135081247">تلفن : 35081247-021</a>
+                            <br>
+                            <a href="mailto:webmaster@tvedc.ir">WebMaster@tvedc.ir</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyRfooter">
+                <a> کلیه حقوق این سایت متعلق به شرکت توزیع برق استان تهران میباشد</a>
+                <br>
+                <a href="http://www.Rabinn.ir/">Powered By Rabin</a>
+            </div>
+
+        </section>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script src="../../libs/bootstrap/js/bootst.min.js"></script>
+    <script src="css&js/customJs.js"></script>
+</body>
+
+</html>
