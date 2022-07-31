@@ -1,0 +1,144 @@
+@font-face {
+  font-family: "iranyekan";
+  src: url("../../../../libs/Fonts/iranyekanwebmedium.eot");
+  src: url("../../../../libs/Fonts/iranyekanwebblack.eot");
+  src: url("../../../../libs/Fonts/iranyekanwebmedium.woff") format("woff");
+}
+
+body {
+  font-family: 'iranyekan', tahoma, Arial;
+  -webkit-font-smoothing: antialiased;
+  background: rgb(255, 255, 255);
+}
+
+.TableSection {
+  margin-top: 2rem;
+  border: 2px white;
+  box-shadow: 0 0px 13px 3px rgb(199 199 199);
+  overflow: hidden;
+  border-radius: 7px;
+
+}
+
+.TableCard {
+  height: 600px;
+  overflow-y: auto;
+
+}
+
+tbody {
+  height: 590px;
+}
+
+.TableHeader,
+tbody {
+  height: 60px;
+}
+
+table {
+  width: 100%;
+  font-size: 1.2em;
+}
+
+.TableSearch {
+  border: unset;
+  border-radius: 5px;
+  font-size: smaller;
+  float: left;
+}
+.TableSearch:focus {
+  outline: none ;
+  box-shadow: 0 0 10px #ff6702;
+}
+
+tr {
+  height: 60px;
+
+}
+
+.TableSearch,
+::placeholder {
+  color: #a5a5a5;
+}
+
+
+table,
+td {
+  color: rgb(122, 119, 119);
+  background: rgb(255, 255, 255);
+  text-align: center;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+td:nth-child(2) {
+  text-align: start;
+  overflow: hidden;
+}
+
+td:nth-child(3) {
+  text-align: center;
+  overflow: hidden;
+}
+
+
+
+th {
+  color: rgb(255, 255, 255);
+  background: rgb(255, 187, 0);
+  text-align: center;
+}
+
+th:nth-child(2) {
+  text-align: start;
+}
+
+.AuctionsEnd {
+  color: #535353;
+}
+
+.AuctionsEndActive {
+  color: #42bb48;
+}
+
+tr:hover td {
+  background: #acacac;
+  color: white;
+}
+
+.Hidden {
+  height: unset;
+  color: unset;
+  background: unset;
+}
+
+/* ScrollBar */
+
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ffbb00;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #ffd900;
+}
+
+.Pagination{
+  width: 300px;
+  height: 35px;
+  margin-top: 0.5rem;
+  background: #ff6702;
+  border-radius: 10px;
+  align-items: center;
+}
