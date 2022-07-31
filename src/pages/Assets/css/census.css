@@ -1,0 +1,72 @@
+@font-face {
+    font-family: "iranyekan";
+    src: url("../../../../libs/Fonts/iranyekanwebmedium.eot");
+    src: url("../../../../libs/Fonts/iranyekanwebblack.eot");
+    src: url("../../../../libs/Fonts/iranyekanwebmedium.woff") format("woff");
+
+}
+
+body {
+    font-family: 'iranyekan', tahoma, Arial;
+    -webkit-font-smoothing: antialiased;
+background: rgb(255, 255, 255);
+}
+a.menu,.SubMenu {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  line-height: 1.5rem;
+}
+a.SubMenu:hover{
+  color:rgb(255, 196, 0);
+  text-decoration: none;
+}
+i{
+  margin-left: 1rem;
+}
+.row{
+  margin-top: 2rem;
+}
+.FolderSide{
+background:#262626;
+height: 600px;
+border-radius: 8px;
+box-shadow: 0 2px 4px 2px grey;
+margin-bottom: 1rem;
+padding: 1rem;
+overflow: hidden;
+
+}
+
+.accordion-item{
+  background: none;
+  border: unset;
+}
+.accordion-button{
+  background: #262626;
+}
+.accordion-button:not(.collapsed){
+  background: orange;
+  border-radius: 10px;
+}
+
+.SubMenu{
+  margin-right: 2rem;
+}
+.TitleFileCard{
+  background: white;
+}
+.TitleCardName{
+  padding: 0.5rem;
+}
+.TableSection{
+  margin-top: unset;
+height: 600px;
+
+}
+.DownloadBtn{
+  color: #42bb48;
+}
+.DownloadBtn:hover{
+  color: #ffffff;
+
+}

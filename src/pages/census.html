@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>شرکت توزیع نیروی برق استان تهران</title>
+    <link href="../../libs/bootstrap/css/bootstrap.rtl.min.css" rel="stylesheet" type="text/css" />
+    <link href="../../css/html-Temp.css" rel="stylesheet" type="text/css" />
+    <link href="Assets/css/auctions.css" rel="stylesheet" type="text/css" />
+    <link href="Assets/css/census.css" rel="stylesheet" type="text/css" />
+    <link href='/libs/BoxIcon/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+    <!-- NavBar -->
+    <nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top navbarDetails">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://tvedc.ir/html/CodeOfEthicsOrganization.html">منشور اخلاقی</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            قوانین و مقررات
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">معافیت ها </a></li>
+                            <li><a class="dropdown-item" href="#">دفتر حقوقی</a></li>
+                            <li><a class="dropdown-item" href="#">اطلاع رسانی مشترکین </a></li>
+                            <li><a class="dropdown-item" href="#">تعرفه ها و شرایط عمومی آنها </a></li>
+                            <li><a class="dropdown-item" href="#">برق مشتركين بالاي 5 مگاوات (غیرفلزي و پالايشگاهي)</a>
+                            </li>
+                            <li><a class="dropdown-item" href="#">شترکین بالای دو مگاوات و همچنین کمتر از دو مگاوات
+                                    دارای تجاوز از قدرت فلزی و پالایشگاهی </a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            درباره ما
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">معافیت ها </a></li>
+                            <li><a class="dropdown-item" href="#">دفتر حقوقی</a></li>
+                            <li><a class="dropdown-item" href="#">اطلاع رسانی مشترکین </a></li>
+                            <li><a class="dropdown-item" href="#">تعرفه ها و شرایط عمومی آنها </a></li>
+                            <li><a class="dropdown-item" href="#">برق مشتركين بالاي 5 مگاوات (غیرفلزي و پالايشگاهي)</a>
+                            </li>
+                            <li><a class="dropdown-item" href="#">شترکین بالای دو مگاوات و همچنین کمتر از دو مگاوات
+                                    دارای تجاوز از قدرت فلزی و پالایشگاهی </a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            تماس با ما
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">معافیت ها </a></li>
+                            <li><a class="dropdown-item" href="#">دفتر حقوقی</a></li>
+                            <li><a class="dropdown-item" href="#">اطلاع رسانی مشترکین </a></li>
+                            <li><a class="dropdown-item" href="#">تعرفه ها و شرایط عمومی آنها </a></li>
+                            <li><a class="dropdown-item" href="#">برق مشتركين بالاي 5 مگاوات (غیرفلزي و پالايشگاهي)</a>
+                            </li>
+                            <li><a class="dropdown-item" href="#">شترکین بالای دو مگاوات و همچنین کمتر از دو مگاوات
+                                    دارای تجاوز از قدرت فلزی و پالایشگاهی </a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex">
+
+                    <div class="search-wrapper">
+                        <div class="input-holder">
+                            <input type="text" class="search-input" placeholder="جستجو کنید..." />
+                            <button class="search-icon ChangeLNG"
+                                onclick="searchToggle(this, event);"><span></span></button>
+                        </div>
+                        <!-- <span class="close" onclick="searchToggle(this, event);"></span> -->
+                    </div>
+                    <!-- <input class="form-control me-2 SearchBox" type="search" placeholder="جستجو کنید..." aria-label="Search"> -->
+                    <a href="/IndexEn.html" target="_self">
+                        <button class="ChangeLNG " role="button">سروش</button>
+                    </a>
+                    <button type="button" class="ChangeLNG" data-bs-toggle="modal"
+                        data-bs-target="#LoginForm">ورود</button>
+                    <a href="/IndexEn.html" target="_self">
+                        <button class="ChangeLNG" role="button">EN</button>
+                    </a>
+                </form>
+                <!-- LoginForm -->
+                <!-- Modal -->
+                <div class="modal fade" id="LoginForm">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+
+                            <div class="modal-body">
+                                <div class="LoginModal">
+                                    <input class="Logininput" type="checkbox" id="chk" aria-hidden="true">
+                                    <input class="Logininput" type="checkbox" id="chk_register" aria-hidden="true">
+                                    <div class="signin">
+                                        <form autocomplete="on">
+                                            <label class="Loginlabel" for="chk" aria-hidden="true">وارد شوید</label>
+                                            <input class="Logininput" type="text" name="txt" placeholder="نام کاربری"
+                                                required="">
+                                            <input class="Logininput" type="password" name="pswd"
+                                                placeholder="کلمه عبور" required="">
+                                            <button class="Loginbutton">ورود</button>
+                                        </form>
+                                    </div>
+                                    <div class="ForgetPass">
+                                        <form>
+                                            <label class="Loginlabel" for="chk" aria-hidden="true">فراموشی رمز
+                                                عبور</label>
+                                            <input class="Logininput" type="tel" id="phone" name="phone"
+                                                placeholder="تلفن همراه" pattern="[0]{1}[9]{1}[0-9]{9}" required>
+                                            <button class="Loginbutton">ارسال رمز</button>
+                                        </form>
+                                    </div>
+                                    <div class="Signup">
+                                        <form>
+                                            <label class="Loginlabel" for="chk_register" aria-hidden="true">ثبت
+                                                نام</label>
+                                            <input class="Logininput" type="number" name="Melli" placeholder="شناسه ملی"
+                                                required="a">
+                                            <input class="Logininput" type="number" name="Melli"
+                                                placeholder="کد اقتصادی" required="a">
+                                            <button class="Loginbutton">ثبت نام اولیه</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <div class="container-fluid FitNav">
+        <header>
+            <div class="row">
+                <div class="col-12">
+                    <img class="col-7 col-sm col-md-5 col-lg-6 col-xl-4 img-fluid rounded mx-auto d-block  HeaderIMGFIT "
+                        src="/img/H1.svg">
+                    <img class="col-2 col-sm-2 col-md-2 col-lg-1 col-xl-1 flag" src="/img/flag.svg" alt="">
+                    <img class="col-2 col-sm-2 col-md-2 col-lg-1 col-xl-1 YearT" src="/img/Year.svg" alt="">
+                </div>
+            </div>
+        </header>
+    </div>
+    <!-- NavMid -->
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-sm navbar-light bg-light navbarDetails ">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent2" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent2">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://tvedc.ir/html/CodeOfEthicsOrganization.html">منشور
+                                اخلاقی</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                قوانین و مقررات
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">معافیت ها </a></li>
+                                <li><a class="dropdown-item" href="#">دفتر حقوقی</a></li>
+                                <li><a class="dropdown-item" href="#">اطلاع رسانی مشترکین </a></li>
+                                <li><a class="dropdown-item" href="#">تعرفه ها و شرایط عمومی آنها </a></li>
+                                <li><a class="dropdown-item" href="#">برق مشتركين بالاي 5 مگاوات (غیرفلزي و
+                                        پالايشگاهي)</a>
+                                </li>
+                                <li><a class="dropdown-item" href="#">شترکین بالای دو مگاوات و همچنین کمتر از دو مگاوات
+                                        دارای تجاوز از قدرت فلزی و پالایشگاهی </a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                درباره ما
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">معافیت ها </a></li>
+                                <li><a class="dropdown-item" href="#">دفتر حقوقی</a></li>
+                                <li><a class="dropdown-item" href="#">اطلاع رسانی مشترکین </a></li>
+                                <li><a class="dropdown-item" href="#">تعرفه ها و شرایط عمومی آنها </a></li>
+                                <li><a class="dropdown-item" href="#">برق مشتركين بالاي 5 مگاوات (غیرفلزي و
+                                        پالايشگاهي)</a>
+                                </li>
+                                <li><a class="dropdown-item" href="#">شترکین بالای دو مگاوات و همچنین کمتر از دو مگاوات
+                                        دارای تجاوز از قدرت فلزی و پالایشگاهی </a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                تماس با ما
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">معافیت ها </a></li>
+                                <li><a class="dropdown-item" href="#">دفتر حقوقی</a></li>
+                                <li><a class="dropdown-item" href="#">اطلاع رسانی مشترکین </a></li>
+                                <li><a class="dropdown-item" href="#">تعرفه ها و شرایط عمومی آنها </a></li>
+                                <li><a class="dropdown-item" href="#">برق مشتركين بالاي 5 مگاوات (غیرفلزي و
+                                        پالايشگاهي)</a>
+                                </li>
+                                <li><a class="dropdown-item" href="#">شترکین بالای دو مگاوات و همچنین کمتر از دو مگاوات
+                                        دارای تجاوز از قدرت فلزی و پالایشگاهی </a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Slider And Icons -->
+    <div class="container-fluid">
+        <section class="SliderAndIcones">
+            <div class="SiteMap">
+                <span>صفحه اصلی ></span>
+                <span>xxx</span>
+            </div>
+            <div class="TempBase">
+
+
+                <!-- آمار -->
+                <div class="container-fluid card">
+                    <div class="row">
+                        <div class="col-xl-3 col-lg-4 col-md-4">
+                            <div class="FolderSide">
+                                <div class="accordion">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="Menu1">
+                                            <button onclick="OpenFolder()" class="accordion-button collapsed"
+                                                type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                                aria-expanded="true" aria-controls="collapseOne">
+                                                <a class="menu" href="#"><i class='bx bxs-folder'
+                                                        id="MenuExpended"></i>اطلاعات مورد
+                                                    نیاز عموم
+                                                    کاربران</a>
+                                            </button>
+                                        </h2>
+                                        <div id="collapseOne" class="accordion-collapse  collapse"
+                                            aria-labelledby="Menu1" data-bs-parent="#Menu1">
+                                            <div class="accordion-body">
+                                                <a class="SubMenu" href="#"><i class='bx bxs-folder'></i>اطلاعات مورد
+                                                    نیاز عموم
+                                                    کاربران</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="Menu2">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                                aria-expanded="false" aria-controls="collapseTwo">
+                                                <a class="menu" href="#"><i class='bx bxs-folder'></i>اطلاعات مورد نیاز
+                                                    عموم
+                                                    کاربران</a>
+                                            </button>
+                                        </h2>
+                                        <div id="collapseTwo" class="accordion-collapse  collapse"
+                                            aria-labelledby="Menu2" data-bs-parent="#Menu2">
+                                            <div class="accordion-body">
+                                                <a class="SubMenu" href="#"><i class='bx bxs-folder'></i>اطلاعات مورد
+                                                    نیاز عموم
+                                                    کاربران</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="Menu3">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                                aria-expanded="false" aria-controls="collapseThree">
+                                                <a class="menu" href="#"><i class='bx bxs-folder'></i>اطلاعات مورد نیاز
+                                                    عموم
+                                                    کاربران</a>
+                                            </button>
+                                        </h2>
+                                        <div id="collapseThree" class="accordion-collapse collapse "
+                                            aria-labelledby="Menu3" data-bs-parent="#Menu3">
+                                            <div class="accordion-body">
+                                                <a class="SubMenu" href="#"><i class='bx bxs-folder'></i>اطلاعات مورد
+                                                    نیاز عموم
+                                                    کاربران</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-9 col-lg-8 col-md-8">
+                            <div class="TableSection">
+                                <div class="TableHeader">
+                                    <table>
+                                        <tr>
+                                            <th style="width:10%">ردیف</th>
+                                            <th style="width:75%">نام فایل<input class="TableSearch"
+                                                    placeholder="جستجو کنید"></th>
+                                            <th style="width:15%">دانلود</th>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div class="card TableCard">
+                                    <table>
+                                        <tr class="Hidden">
+                                            <th style="width:10%"></th>
+                                            <th style="width:75%"></th>
+                                            <th style="width:15%"></th>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>کارنامه آماری 1391</td>
+                                            <td><a href="#" class="DownloadBtn">دانلود</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>شاخص های آماری سال 1391 </td>
+                                            <td><a href="#" class="DownloadBtn">دانلود</a></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <!-- Footer -->
+    <div class="container-fluid">
+        <section class="footerbg">
+            <div class="col-sm-12">
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                        <div class="footerBoxes">
+                            <img class="Footer_icon" width="100px" src="/img/IconsMenu/Footer/settings.png" alt="">
+                            <br>
+                            <h5 class="FooterItems">سایر خدمات</h5>
+                            <a href="https://tvedc.ir/login.aspx">پیمانکاران</a>
+                            <br>
+                            <a href="https://tvedc.ir/MM/Default.aspx">سازندگان و تامین کنندگان کالای دارای صلاحیت</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                        <div class="footerBoxes">
+                            <img class="Footer_icon" width="100px" src="/img/IconsMenu/Footer/laws.png" alt="">
+                            <br>
+                            <h5 class="FooterItems">الزامات قانونی</h5>
+                            <a href="https://tvedc.ir/sla">توافقنامه سطح خدمت</a>
+                            <br>
+                            <a href="https://tvedc.ir/update-instructions">دستورالعمل بروزرسانی</a>
+                            <br>
+                            <a href="https://tvedc.ir/privacy">بیانیه حریم خصوصی</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                        <div class="footerBoxes">
+                            <img class="Footer_icon" width="100px" src="/img/IconsMenu/Footer/worldwide.png" alt="">
+                            <br>
+                            <h5 class="FooterItems">پیوندها</h5>
+                            <a href="http://www.leader.ir/">دفتر مقام معظم رهبری</a>
+                            <br>
+                            <a href="http://www.president.ir/">ریاست جمهوری</a>
+                            <br>
+                            <a href="http://www.moe.gov.ir/">وزارت نیرو</a>
+                            <br>
+                            <a href="http://www.tavanir.org.ir/">توانیر</a>
+                            <br>
+                            <a href="http://www.iran.ir/">پرتال ملی و استانی</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                        <div class="footerBoxes">
+                            <img class="Footer_icon" width="100px" src="/img/IconsMenu/Footer/vote.png" alt="">
+                            <br>
+                            <h5 class="FooterItems">مشارکت الکترونیک</h5>
+                            <a href="https://tvedc.ir/ContactUs.aspx">پیشنهادات و انتقادات</a>
+                            <br>
+                            <a href="https://tvedc.ir/ContactUs/Feedback.aspx">رسیدگی به شکایات</a>
+                            <br>
+                            <a href="https://tvedc.ir/%d8%a8%db%8c%d8%a7%d9%86%db%8c%d9%87_%d9%85%d8%b4%d8%a7%d8%b1%da%a9%d8%aa">راهبرد
+                                مشارکت</a>
+                            <br>
+                            <a href="https://tvedc.ir/poll">نظرسنجی</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                        <div class="footerBoxes">
+                            <img class="Footer_icon" width="100px" src="/img/IconsMenu/Footer/market-analysis.png" alt="">
+                            <br>
+                            <h5 class="FooterItems">آمار بازدید</h5>
+                            <h6>بازدید تاکنون: 32,358,219</h6>
+                            <h6>کاربران آنلاین: 27</h6>
+                            <h6>بازدید کننده: 0</h6>
+                            <h6>تاریخ بروزرسانی: 1400/08/09 08:16</h6>
+                        </div>
+                    </div>
+                    <div class="d-none d-lg-block d-xl-none col-lg-3">
+                        <div class="footerBoxes">
+                            <img class="Footer_icon" width="100px" src="/img/IconsMenu/Footer/idea.png" alt="">
+                            <br>
+                            <h5 class="FooterItems">سخن روز</h5>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-6 col-xl-2">
+                        <div class="footerBoxes">
+                            <img class="Footer_icon" width="100px" src="/img/IconsMenu/Footer/headset.png" alt="">
+                            <br>
+                            <h5 class="FooterItems">ارتباط با ما</h5>
+                            <h6>آدرس : تهران - میدان شهدا - پلاک 0</h6>
+                            <a href="tell:02135081247">تلفن : 35081247-021</a>
+                            <br>
+                            <a href="mailto:webmaster@tvedc.ir">WebMaster@tvedc.ir</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyRfooter">
+                <a> کلیه حقوق این سایت متعلق به شرکت توزیع برق استان تهران میباشد</a>
+                <br>
+                <a href="http://www.Rabinn.ir/">Powered By Rabin</a>
+            </div>
+
+        </section>
+    </div>
+
+
+    <!-- Scripts -->
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script src="../../libs/bootstrap/js/bootst.min.js"></script>
+    <script src="Assets/js/customJs.js"></script>
+</body>
+
+</html>
